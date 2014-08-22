@@ -1,0 +1,256 @@
+<style>
+
+
+
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin:0px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrap{
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+
+}
+
+h1{
+font-size:5em;
+}
+
+.d1 {z-index:1;}
+.d2 {z-index:2;}
+.d3 {z-index:3;}
+.d4 {z-index:4;}
+.d5 {z-index:5;}
+.d6 {z-index:6;}
+.d7 {z-index:7;}
+.d8 {z-index:8;}
+.d9 {z-index:9;}
+.d10 {z-index:10;} 
+
+.blackbox {
+text-align:center;
+background-color:black;
+height:100%;
+width:100%;
+color:#ffffff;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.d1 {
+animation:d1 2s;
+animation-delay:0s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d1{
+0% {margin-bottom:0; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:0;}
+100%{margin-bottom:200%;color:transparent;}
+}
+	
+.d2 {									/*this is your selector class associated with html element*/
+animation:d2 2s;						/*name & duration of the animation, in this case "d2" and the animation lasts 2 seconds long */
+animation-delay:2s;						/*the amount of time before the animation starts*/
+color:transparent;						
+animation-fill-mode: forwards;			/*direction of animation...? */
+animation-iteration-count:1;			/*number of times animation plays*/
+-webkit-animation-iteration-count:1;	/*Mozilla reference*/
+animation-timing-function: ease;		/*easing effect*/
+}
+
+@keyframes d2{
+0% {margin-bottom:200%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:200%;}
+100%{margin-bottom:400%;color:#ffffff;}
+}
+
+.d3 {
+animation:d3 2s;
+animation-delay:4s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d3{
+0% {margin-bottom:400%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:400%;}
+100%{margin-bottom:600%;color:#ffffff;}
+}
+
+.d4 {
+animation:d4 2s;
+animation-delay:6s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d4{
+0% {margin-bottom:600%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:600%;}
+100%{margin-bottom:800%;color:#ffffff;}
+}
+
+.d5 {
+animation:d5 2s;
+animation-delay:8s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d5{
+0% {margin-bottom:800%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:800%;}
+100%{margin-bottom:1000%;color:#ffffff;}
+}
+.d6 {
+animation:d6 2s;
+animation-delay:10s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+img {height:25%;width:25%;}
+@keyframes d6{
+0% {margin-bottom:1000%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:1000%;}
+100%{margin-bottom:1200%;color:#ffffff;}
+}
+
+.d7 {
+animation:d7 2s;
+animation-delay:12s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d7{
+0% {margin-bottom:1200%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:1200%;}
+100%{margin-bottom:1400%;color:#ffffff;}
+}
+
+.d8 {
+animation:d8 2s;
+animation-delay:14s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d8{
+0% {margin-bottom:1400%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:1400%;}
+100%{margin-bottom:1600%;color:#ffffff;}
+}
+
+.d9 {
+animation:d9 2s;
+animation-delay:16s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d9{
+0% {margin-bottom:1600%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:1600%;}
+100%{margin-bottom:1800%;color:#ffffff;}
+}
+
+.d10 {
+animation:d10 2s;
+animation-delay:18s;
+color:transparent;
+animation-fill-mode: forwards;
+animation-iteration-count:1;
+-webkit-animation-iteration-count:1;
+animation-timing-function: ease;
+}
+
+@keyframes d10{
+0% {margin-bottom:1800%; color:transparent;}
+50%{color:#ffffff;}
+99%{margin-bottom:1800%;}
+100%{margin-bottom:2000%;color:#ffffff;}
+}
+
+}
+</style>
